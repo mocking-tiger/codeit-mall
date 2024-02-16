@@ -25,14 +25,11 @@ export default function Search() {
 
   return (
     <div>
-      <Header />
-      <Container>
         <SearchForm initialValue={q} />
         <h2 className={styles.title}>
           <span className={styles.keyword}>{q}</span> 검색 결과
         </h2>
         <ProductList className={styles.productList} products={products} />
-      </Container>
     </div>
   );
 }
